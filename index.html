@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Surgical Spinal Decompression in Bee Cave, TX | Elite Wellness Chiropractic</title>
+    <meta name="description" content="Expert non-surgical spinal decompression therapy in Bee Cave, TX. Dr. Mikala Booher, DC uses the advanced DOC table for herniated discs, sciatica, and spinal stenosis.">
+    
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (Script for Config Injection) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: '#7E8772',
+                        sageDark: '#6A735E',
+                        sageLight: 'rgba(126,135,114,0.1)',
+                        linen: '#F4F0EB',
+                        card: '#F4F5F2',
+                        dark: '#1D1D1D',
+                        body: '#6D6D6D',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+                        'hover': '0 10px 30px -5px rgba(0, 0, 0, 0.08)',
+                        'glow': '0 0 18px rgba(126,135,114,0.45)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- JSON-LD Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How is spinal decompression different from traction?", "acceptedAnswer": { "@type": "Answer", "text": "Standard traction applies a constant pulling force, triggering the body's protective muscle guarding reflex. True spinal decompression uses computerized variable force curves that gradually cycle between pulling and releasing in patterns the body cannot anticipate, achieving genuine negative intradiscal pressure." }},
+        { "@type": "Question", "name": "How many decompression sessions will I need?", "acceptedAnswer": { "@type": "Answer", "text": "Dr. Mikala Booher, DC, typically recommends either 12 or 24 sessions based on the extent of disc pathology and condition severity. Most patients experience meaningful improvement within the first 4-6 sessions." }},
+        { "@type": "Question", "name": "Do I need an MRI before starting decompression therapy?", "acceptedAnswer": { "@type": "Answer", "text": "An MRI is helpful but not required to begin. We take full-spine digital X-rays during your New Patient Experience to evaluate alignment and structural changes. If you have an existing MRI, please bring it to refine your protocol." }}
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalTherapy",
+      "name": "Non-Surgical Spinal Decompression",
+      "alternateName": "Decompression Therapy",
+      "description": "A non-surgical, traction-based treatment outcome that creates negative intradiscal pressure to retract herniated disc material and promote healing.",
+      "provider": {
+        "@type": "MedicalOrganization",
+        "name": "Elite Wellness Chiropractic",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "12101 Bee Cave Rd Suite 5B",
+          "addressLocality": "Bee Cave",
+          "addressRegion": "TX",
+          "postalCode": "78738"
+        }
+      }
+    }
+    </script>
+
+    <style>
+        /* Mobile Horizontal Overflow Fixes */
+        html, body {
+            overflow-x: hidden !important;
+            width: 100% !important;
+            max-width: 100vw !important;
+            position: relative;
+        }
+
+        /* Custom Typography overrides to match exact specs */
+        h1 { font-family: 'Montserrat', sans-serif !important; font-size: 48px !important; line-height: 48px !important; font-weight: 700 !important; color: #1D1D1D; }
+        h2 { font-family: 'Montserrat', sans-serif !important; font-size: 48px !important; line-height: 48px !important; font-weight: 600 !important; }
+        h2:not(.text-white) { color: #1D1D1D; }
+        h3 { font-family: 'Montserrat', sans-serif !important; font-size: 24px !important; line-height: 25px !important; font-weight: 600 !important; }
+        h3:not(.text-white):not(.text-red-700):not(.text-sageDark) { color: #1D1D1D; }
+        
+        .text-body { font-family: 'Montserrat', sans-serif; font-size: 16px; line-height: 24px; font-weight: 400; color: #6D6D6D; }
+        .text-tag { font-family: 'Montserrat', sans-serif !important; font-size: 14px !important; line-height: normal !important; font-weight: 700 !important; color: #7E8772 !important; }
+        .text-reference { font-family: 'Montserrat', sans-serif !important; font-size: 12px !important; line-height: 20px !important; font-weight: 400 !important; color: #6D6D6D !important; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 36px !important; line-height: 40px !important; }
+            h2 { font-size: 32px !important; line-height: 38px !important; }
+            h3 { font-size: 20px !important; line-height: 24px !important; }
+        }
+
+        /* Subtle Grain Texture */
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Ken Burns Animation */
+        @keyframes kenBurns {
+            0% { transform: scale(1.0); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1.0); }
+        }
+        .animate-ken-burns {
+            animation: kenBurns 16s ease-in-out infinite;
+        }
+
+        /* Floating Element Animation */
+        @keyframes floating {
+            0% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(3deg); }
+            100% { transform: translateY(0px) rotate(0deg); }
+        }
+        .animate-floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        .animate-floating-delayed {
+            animation: floating 7s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+
+        /* Utility specific classes */
+        .clip-reveal { clip-path: inset(100% 0% 0% 0%); }
+        
+        /* Accordion transition */
+        .accordion-content {
+            transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-item.active .accordion-content {
+            opacity: 1;
+        }
+
+        /* Hero text mask for GSAP */
+        .word-mask { display: inline-block; overflow: hidden; vertical-align: bottom; padding-bottom: 4px; margin-bottom: -4px;}
+        .word-mask span { display: inline-block; transform: translateY(100%); opacity: 0; }
+
+        /* Custom link underline draw */
+        .link-underline { position: relative; }
+        .link-underline::after {
+            content: ''; position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+            background-color: currentColor; transition: width 0.3s ease;
+        }
+        .link-underline:hover::after { width: 100%; }
+
+        /* Button transition & glowing */
+        .btn-premium {
+            transition: all 0.3s ease;
+        }
+        .btn-premium:hover {
+            transform: scale(1.04);
+            box-shadow: 0 0 18px rgba(126,135,114,0.45);
+        }
+        .btn-outline:hover {
+            transform: scale(1.04);
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        /* Initial Hide for Scroll reveals */
+        .reveal-up { opacity: 0; transform: translateY(30px); }
+        
+        /* Process Line */
+        #process-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+        }
+    </style>
+</head>
+<body class="bg-linen text-body font-sans antialiased overflow-x-hidden selection:bg-sage selection:text-white">
+
+    <div class="grain-overlay"></div>
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 top-0 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-dark tracking-tight">EWC<span class="text-sage">.</span></div>
+            
+            <div class="hidden lg:flex space-x-8 items-center">
+                <a href="#" class="text-sm font-semibold text-dark border-b-2 border-sage pb-1">Conditions We Treat</a>
+                <a href="#" class="text-sm font-semibold text-body hover:text-dark transition-colors link-underline">Services</a>
+                <a href="#" class="text-sm font-semibold text-body hover:text-dark transition-colors link-underline">About</a>
+                <a href="#" class="text-sm font-semibold text-body hover:text-dark transition-colors link-underline">Areas We Serve</a>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-6">
+                <a href="tel:512-328-3800" class="text-dark font-semibold hover:text-sage hover:scale-105 transition-all flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> (512) 328-3800
+                </a>
+                <a href="#" class="bg-sage text-white px-6 py-2.5 rounded-full font-semibold text-sm btn-premium shadow-sm">Claim $60 Special</a>
+            </div>
+
+            <button class="lg:hidden text-dark" id="mobile-menu-btn">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="fixed inset-0 bg-white z-40 transform translate-x-full transition-transform duration-300 flex flex-col p-8 pt-24 hidden">
+            <button id="close-menu-btn" class="absolute top-6 right-6 text-dark">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <a href="#" class="text-2xl font-bold text-dark mb-6">Conditions</a>
+            <a href="#" class="text-2xl font-bold text-dark mb-6">Services</a>
+            <a href="#" class="text-2xl font-bold text-dark mb-6">About</a>
+            <a href="#" class="text-2xl font-bold text-dark mb-12">Areas We Serve</a>
+            <a href="tel:512-328-3800" class="text-xl font-bold text-sage mb-6 flex items-center gap-2">
+                <i data-lucide="phone"></i> (512) 328-3800
+            </a>
+            <a href="#" class="bg-sage text-white px-8 py-4 rounded-full font-bold text-center w-full">Claim $60 Special</a>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section class="bg-linen min-h-[95vh] flex items-center pt-32 pb-24 lg:pt-40 lg:pb-32 relative overflow-hidden">
+        <!-- Abstract Background Shapes -->
+        <svg class="absolute top-20 right-10 text-sage/10 w-64 h-64 animate-floating pointer-events-none" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M44.7,-76.4C58.8,-69.2,71.8,-59.1,80.5,-45.6C89.2,-32.1,93.5,-16,92.5,-0.6C91.4,14.8,85,29.6,76.1,42.5C67.1,55.4,55.5,66.4,41.8,73.5C28.2,80.6,14.1,83.9,-0.6,84.9C-15.3,86,-30.5,84.9,-43.6,78C-56.7,71.2,-67.7,58.6,-76.3,44.4C-84.9,30.2,-91.1,15.1,-90.4,0.4C-89.7,-14.3,-82,-28.6,-73.4,-41.8C-64.8,-55,-55.3,-67.1,-42,-74.6C-28.7,-82.1,-14.3,-85,0.6,-86C15.5,-87,30.9,-83.6,44.7,-76.4Z" transform="translate(100 100)" />
+        </svg>
+
+        <div class="max-w-7xl mx-auto px-6 w-full grid lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
+            <!-- Left Text Content -->
+            <div class="lg:col-span-7 space-y-8 py-12">
+                <div class="flex items-center gap-2 opacity-0" id="hero-trust">
+                    <div class="flex text-amber-400">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <span class="text-tag tracking-wide uppercase text-sage">Rated 5.0 Stars Based on 376+ Google Reviews</span>
+                </div>
+                
+                <h1 id="hero-title" class="pr-4 lg:pr-12">
+                    <span class="word-mask"><span>Non-Surgical</span></span> 
+                    <span class="word-mask"><span>Spinal</span></span> 
+                    <span class="word-mask text-sage"><span>Decompression</span></span> 
+                    <span class="word-mask"><span>in</span></span> 
+                    <span class="word-mask"><span>Bee</span></span> 
+                    <span class="word-mask"><span>Cave</span></span>
+                </h1>
+                
+                <p class="text-body text-lg pr-4 lg:pr-20 opacity-0" id="hero-body">
+                    Looking for targeted relief from herniated discs, sciatica, or spinal stenosis? We utilize the advanced DOC table and evidence-based corrective care protocols to bypass muscle guarding, achieve negative intradiscal pressure, and promote genuine healing without surgery.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 opacity-0 pt-4" id="hero-ctas">
+                    <a href="#" class="bg-sage text-white px-8 py-4 rounded-full font-semibold text-center btn-premium shadow-lg flex items-center justify-center gap-2">
+                        Schedule Your Spinal Assessment <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="tel:512-328-3800" class="border-2 border-sage text-sage px-8 py-4 rounded-full font-semibold text-center btn-outline hover:bg-sage/5 transition flex items-center justify-center gap-2">
+                        <i data-lucide="phone-call" class="w-4 h-4"></i> Call (512) 328-3800
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="lg:col-span-5 relative opacity-0" id="hero-image-container">
+                <div class="absolute inset-0 bg-sage rounded-[2rem] transform translate-x-4 translate-y-4 opacity-20"></div>
+                <div class="rounded-[2rem] overflow-hidden shadow-2xl relative z-10 aspect-[4/5]">
+                    <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/686eae0fc8bfd8f1f31f2564_Disc%20Herniations%20%26%20Bulges%206-p-500.avif" alt="Spinal Decompression Treatment in Bee Cave" class="w-full h-full object-cover animate-ken-burns">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. KEY TAKEAWAYS BOX -->
+    <section class="bg-sage py-24 relative overflow-hidden text-white" id="takeaways">
+        <!-- Background accents -->
+        <svg class="absolute -top-24 -right-24 text-white/5 w-96 h-96 animate-floating-delayed pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+
+        <div class="max-w-5xl mx-auto px-6 relative z-10">
+            <h2 class="text-white text-center mb-16 uppercase tracking-wider text-2xl md:text-3xl lg:text-[32px] leading-snug reveal-up">Key Takeaways: <br><span class="font-normal opacity-90">What You Need To Know About Decompression</span></h2>
+            
+            <div class="space-y-6">
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Research-supported mechanism:</strong> Decompression creates negative intradiscal pressure (-100 to -200 mmHg), promoting retraction of herniated disc material and influx of nutrients essential for healing (Ramos & Martin, 1994).</p>
+                </div>
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Clinical effectiveness:</strong> A systematic review found that 86% of patients with herniated or degenerative discs reported significant pain reduction, maintained at long-term follow-ups (Macario & Pergolizzi, 2006).</p>
+                </div>
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Not the same as traction:</strong> True decompression uses variable force curves that bypass the body's protective muscle guarding reflex, achieving pressure changes that linear traction cannot replicate.</p>
+                </div>
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Ideal candidates:</strong> Patients with MRI-confirmed herniated/bulging discs, degenerative disc disease, sciatica, or spinal stenosis who haven't responded to medication or physical therapy.</p>
+                </div>
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0">
+                        <i data-lucide="check" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Treatment timeline:</strong> Clinical protocols typically involve 12–24 sessions based on severity, with most patients reporting measurable symptom improvement within the first 4–6 sessions.</p>
+                </div>
+                <div class="flex items-start gap-4 takeaway-item opacity-0 transform translate-y-10">
+                    <div class="mt-1 bg-white/20 p-1.5 rounded-full shrink-0 bg-red-500/80">
+                        <i data-lucide="alert-triangle" class="w-5 h-5 text-white"></i>
+                    </div>
+                    <p class="text-lg leading-relaxed"><strong class="font-bold tracking-wide">Important contraindications:</strong> Not appropriate for patients who are pregnant, have severe osteoporosis, have prior spinal surgery with hardware, or have unstable spinal fractures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. UNDERSTANDING SECTION -->
+    <section class="bg-white py-24 lg:py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="mb-16 max-w-4xl reveal-up">Understanding Spinal Decompression — How It Works</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-12 order-2 lg:order-1">
+                    <p class="text-lg reveal-up">Intervertebral discs function as hydraulic shock absorbers. When a disc herniates or bulges, it pushes outward, compressing adjacent nerve roots. Traditional treatments address pain but don't directly affect the disc itself.</p>
+                    
+                    <div class="space-y-8">
+                        <div class="reveal-up border-l-2 border-sage pl-6">
+                            <h3 class="mb-3">The Core Mechanism: Negative Pressure</h3>
+                            <p>Controlled distraction forces create measurable negative pressure within the disc space. This draws herniated disc material back toward the center and creates an osmotic gradient that pulls water, oxygen, and nutrients into the disc for repair.</p>
+                        </div>
+                        
+                        <div class="reveal-up border-l-2 border-sage pl-6">
+                            <h3 class="mb-3">Why It's Not Simple Traction</h3>
+                            <p>Standard traction applies a constant pull, triggering the body's muscle guarding reflex. True decompression systems use logarithmic force curves that gradually increase and decrease tension in patterns the body cannot anticipate, bypassing this reflex entirely.</p>
+                        </div>
+                        
+                        <div class="reveal-up border-l-2 border-sage pl-6">
+                            <h3 class="mb-3">The DOC Table Advantage</h3>
+                            <p>Most tables are limited to linear pulling. Our DOC table offers supine or prone positioning, lateral flexion, and rotational decompression. This multi-planar capability allows us to target the specific angle of your disc herniation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="order-1 lg:order-2 h-[600px] rounded-3xl overflow-hidden clip-reveal shadow-xl">
+                    <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/6860b58f87cb2aa48772841a_EWC%20Building.avif" alt="Elite Wellness Chiropractic Clinic" class="w-full h-[130%] object-cover parallax-img -translate-y-[15%]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <svg class="w-full h-16 text-linen fill-current -mb-1 bg-white" viewBox="0 0 1440 48" preserveAspectRatio="none">
+        <path d="M0,48 C240,48 480,0 720,0 C960,0 1200,48 1440,48 L1440,48 L0,48 Z"></path>
+    </svg>
+
+    <!-- 5. CONDITIONS TREATED -->
+    <section class="bg-linen py-24">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center mb-16 max-w-4xl mx-auto reveal-up">Conditions Treated — Is This Therapy Right For You?</h2>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-card rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 reveal-up">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sage mb-6 shadow-sm">
+                        <i data-lucide="disc" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl mb-4">Herniated & Bulging Discs</h3>
+                    <ul class="space-y-3 text-body text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Disc material extends beyond normal boundary</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Often causes radiating pain (lumbar or cervical)</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Decompression creates negative pressure to retract material</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-card rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 reveal-up" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sage mb-6 shadow-sm">
+                        <i data-lucide="layers" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl mb-4">Degenerative Disc Disease</h3>
+                    <ul class="space-y-3 text-body text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Progressive loss of disc height and hydration</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Often affects multiple levels (L4-L5, L5-S1)</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Decompression promotes vital nutrient diffusion</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-card rounded-2xl p-8 shadow-soft hover:shadow-hover transition-all duration-300 hover:-translate-y-2 reveal-up" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-sage mb-6 shadow-sm">
+                        <i data-lucide="activity" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl mb-4">Sciatica & Spinal Stenosis</h3>
+                    <ul class="space-y-3 text-body text-sm">
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Sharp, shooting pain radiating down the leg</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Narrowing of the spinal canal or neural foramina</li>
+                        <li class="flex items-start gap-2"><i data-lucide="dot" class="text-sage w-5 h-5 shrink-0"></i> Opens foraminal spaces and reduces nerve compression</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 reveal-up">
+                <!-- Red Alert Box -->
+                <div class="bg-white border-l-4 border-red-500 rounded-r-xl p-8 shadow-soft">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="x-circle" class="text-red-600 w-6 h-6 shrink-0"></i>
+                        <h3 class="text-red-700 text-lg uppercase font-bold tracking-wide m-0">NOT APPROPRIATE IF YOU HAVE:</h3>
+                    </div>
+                    <ul class="space-y-3 text-body">
+                        <li class="flex items-start gap-2"><span class="text-red-400 mt-[-2px] font-bold">•</span> Prior spinal surgery with hardware (rods, screws, cages)</li>
+                        <li class="flex items-start gap-2"><span class="text-red-400 mt-[-2px] font-bold">•</span> Pregnancy (we offer prenatal adjustments instead)</li>
+                        <li class="flex items-start gap-2"><span class="text-red-400 mt-[-2px] font-bold">•</span> Severe osteoporosis (T-score below -2.5)</li>
+                        <li class="flex items-start gap-2"><span class="text-red-400 mt-[-2px] font-bold">•</span> An unstable spinal fracture or active spinal infection</li>
+                        <li class="flex items-start gap-2"><span class="text-red-400 mt-[-2px] font-bold">•</span> An abdominal aortic aneurysm</li>
+                    </ul>
+                </div>
+
+                <!-- Red Alert Box 2 (Emergencies) -->
+                <div class="bg-white border-l-4 border-red-700 rounded-r-xl p-8 shadow-soft">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i data-lucide="siren" class="text-red-800 w-6 h-6 shrink-0"></i>
+                        <h3 class="text-red-800 text-lg uppercase font-bold tracking-wide m-0">SEEK EMERGENCY CARE IF YOU HAVE:</h3>
+                    </div>
+                    <ul class="space-y-3 text-body">
+                        <li class="flex items-start gap-2"><span class="text-red-500 mt-[-2px] font-bold">•</span> Bowel or bladder dysfunction (loss of control or inability to urinate)</li>
+                        <li class="flex items-start gap-2"><span class="text-red-500 mt-[-2px] font-bold">•</span> Saddle numbness (loss of sensation between your legs)</li>
+                        <li class="flex items-start gap-2"><span class="text-red-500 mt-[-2px] font-bold">•</span> Progressive weakness in both legs</li>
+                        <li class="flex items-start gap-2"><span class="text-red-500 mt-[-2px] font-bold">•</span> Severe pain following significant trauma</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. RESEARCH SECTION -->
+    <section class="bg-white py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto mb-20 reveal-up">
+                <span class="text-tag tracking-wider">EVIDENCE-BASED OUTCOMES</span>
+                <h2 class="mt-4">What the Research Says About Spinal Decompression</h2>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="grid md:grid-cols-3 gap-12 mb-24 border-y border-gray-100 py-12">
+                <div class="text-center reveal-up">
+                    <div class="text-[48px] font-bold text-sage mb-2">
+                        <span class="stat-counter" data-target="86" data-suffix="%">0%</span>
+                    </div>
+                    <p class="text-lg">reported significant pain reduction</p>
+                    <p class="text-xs text-gray-400 mt-2">(Shealy & Borgmeyer, 1997)</p>
+                </div>
+                <div class="text-center reveal-up" style="transition-delay: 100ms;">
+                    <div class="text-[48px] font-bold text-sage mb-2">
+                        <span class="stat-counter" data-target="180" data-suffix="-day">0</span>
+                    </div>
+                    <p class="text-lg">improvements maintained at follow-up</p>
+                    <p class="text-xs text-gray-400 mt-2">(Macario & Pergolizzi, 2006)</p>
+                </div>
+                <div class="text-center reveal-up" style="transition-delay: 200ms;">
+                    <div class="text-[48px] font-bold text-sage mb-2">
+                        <span class="stat-counter" data-target="200" data-prefix="-" data-suffix=" mmHg">0</span>
+                    </div>
+                    <p class="text-lg">negative intradiscal pressure achieved</p>
+                    <p class="text-xs text-gray-400 mt-2">(Ramos & Martin, 1994)</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1 h-[500px] rounded-3xl overflow-hidden clip-reveal shadow-xl">
+                    <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/686eae0f5830fe9eb8de5210_Disc%20Herniations%20%26%20Bulges%204-p-800.avif" alt="Clinical Assessment for Spinal Decompression" class="w-full h-full object-cover">
+                </div>
+                
+                <div class="space-y-10 order-1 lg:order-2">
+                    <div class="reveal-up">
+                        <h3 class="mb-3">Clinical Outcome Studies</h3>
+                        <p>In a study of 778 patients with herniated and degenerative discs, 86% reported immediate resolution or significant improvement. Decompression therapy appears particularly effective for patients who have failed other conservative treatments.</p>
+                    </div>
+                    <div class="reveal-up">
+                        <h3 class="mb-3">Mechanism of Action Research</h3>
+                        <p>Ramos & Martin demonstrated that controlled distraction forces produce measurable negative intradiscal pressure, dropping to -100 to -200 mmHg within the disc space—levels sufficient to promote disc retraction.</p>
+                    </div>
+                    <div class="reveal-up">
+                        <h3 class="mb-3">Disc Healing & Regeneration Evidence</h3>
+                        <p>Cyclic loading and unloading of intervertebral discs stimulates disc cell metabolism and promotes proteoglycan synthesis. This creates conditions for actual disc tissue repair rather than just temporary symptom relief.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. OUR APPROACH SECTION -->
+    <section class="bg-linen py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="mb-16 max-w-3xl reveal-up">Our Integrated Approach to Spinal Decompression</h2>
+            
+            <div class="grid lg:grid-cols-12 gap-16 items-start">
+                <div class="lg:col-span-5 sticky top-32 clip-reveal rounded-3xl overflow-hidden shadow-xl hidden lg:block">
+                    <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/686eae0f6a56fad8cd5e8aca_Disc%20Herniations%20%26%20Bulges%203-p-800.avif" alt="Decompression Treatment Bee Cave" class="w-full h-auto aspect-[4/5] object-cover">
+                </div>
+                
+                <div class="lg:col-span-7 grid sm:grid-cols-2 gap-8">
+                    <!-- Cards -->
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-2 reveal-up">
+                        <i data-lucide="search" class="w-8 h-8 text-sage mb-6"></i>
+                        <h3 class="text-xl mb-4">Comprehensive Assessment</h3>
+                        <p class="text-sm text-body leading-relaxed">Visit 1 includes a 3D biomechanical examination and full-spine digital X-rays to evaluate alignment, joint mobility, and structural integrity before any treatment begins.</p>
+                    </div>
+                    
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-2 reveal-up" style="transition-delay: 100ms;">
+                        <i data-lucide="file-text" class="w-8 h-8 text-sage mb-6"></i>
+                        <h3 class="text-xl mb-4">Report of Findings</h3>
+                        <p class="text-sm text-body leading-relaxed">Visit 2 reviews all imaging. If decompression is appropriate, you receive a detailed care plan specifying the number of sessions (typically 12 or 24) and expected milestones.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-2 reveal-up">
+                        <i data-lucide="settings" class="w-8 h-8 text-sage mb-6"></i>
+                        <h3 class="text-xl mb-4">The DOC Protocol</h3>
+                        <p class="text-sm text-body leading-relaxed">We precisely program the table's distraction angle, patient positioning, and force parameters based on the specific target disc level and your unique pathology.</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-2 reveal-up" style="transition-delay: 100ms;">
+                        <i data-lucide="layers" class="w-8 h-8 text-sage mb-6"></i>
+                        <h3 class="text-xl mb-4">Integrated Corrective Care</h3>
+                        <p class="text-sm text-body leading-relaxed">We combine decompression with structural chiropractic adjustments to fix misalignment, Pettibon corrective protocols for posture, and access to our recovery suite.</p>
+                    </div>
+                    
+                    <div class="sm:col-span-2 mt-8 reveal-up">
+                        <a href="tel:512-328-3800" class="inline-flex items-center gap-3 bg-sage text-white px-8 py-4 rounded-full font-semibold btn-premium shadow-lg">
+                            Schedule Your Assessment <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. PROCESS SECTION -->
+    <section class="bg-white py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center mb-24 reveal-up">What to Expect During Your Treatment: <br><span class="font-normal text-gray-400">The Decompression Process</span></h2>
+            
+            <div class="relative max-w-5xl mx-auto mb-16">
+                <!-- SVG Connecting Line -->
+                <svg class="absolute top-8 left-[10%] w-[80%] h-2 z-0 hidden md:block" preserveAspectRatio="none" overflow="visible">
+                    <line x1="0" y1="0" x2="100%" y2="0" stroke="#7E8772" stroke-width="2" stroke-dasharray="8 8" opacity="0.3" />
+                    <line x1="0" y1="0" x2="100%" y2="0" stroke="#7E8772" stroke-width="3" id="process-path" />
+                </svg>
+
+                <div class="grid md:grid-cols-3 gap-12 relative z-10">
+                    <div class="text-center group reveal-up">
+                        <div class="w-20 h-20 bg-linen rounded-full mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                            <i data-lucide="clipboard-list" class="w-8 h-8 text-sage"></i>
+                        </div>
+                        <div class="text-tag mb-2">STEP 01</div>
+                        <h3 class="mb-4">Before the Session</h3>
+                        <p class="text-body text-sm">Most patients begin with 3 sessions per week. Wear loose-fitting clothing and avoid large meals beforehand to ensure maximum comfort on the table.</p>
+                    </div>
+                    
+                    <div class="text-center group reveal-up" style="transition-delay: 200ms;">
+                        <div class="w-20 h-20 bg-linen rounded-full mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                            <i data-lucide="activity" class="w-8 h-8 text-sage"></i>
+                        </div>
+                        <div class="text-tag mb-2">STEP 02</div>
+                        <h3 class="mb-4">During Decompression</h3>
+                        <p class="text-body text-sm">Secured in the DOC table, you'll feel a gentle, comfortable cyclic stretching (15-25 minutes). Many patients find it so relaxing they fall asleep.</p>
+                    </div>
+
+                    <div class="text-center group reveal-up" style="transition-delay: 400ms;">
+                        <div class="w-20 h-20 bg-linen rounded-full mx-auto flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                            <i data-lucide="sun" class="w-8 h-8 text-sage"></i>
+                        </div>
+                        <div class="text-tag mb-2">STEP 03</div>
+                        <h3 class="mb-4">After the Session</h3>
+                        <p class="text-body text-sm">Dr. Booher may perform complementary adjustments. You can utilize our recovery room (infrared sauna/cold plunge) to reduce inflammation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center reveal-up">
+                <a href="#" class="inline-block bg-sage text-white px-8 py-4 rounded-full font-semibold btn-premium shadow-lg">Claim Your $60 New Patient Special</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. WHAT TO EXPECT TIMELINE -->
+    <section class="bg-linen py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="mb-16 reveal-up">Progress Milestones to Monitor</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-16 mb-16">
+                <!-- Column 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-soft reveal-up">
+                    <h3 class="text-2xl mb-6 flex items-center gap-3">
+                        <span class="bg-sage text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span> 
+                        Initial Relief <span class="text-body text-base font-normal">(Sessions 1-8)</span>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-sage w-5 h-5 shrink-0 mt-0.5"></i> <strong>Sessions 1-4:</strong> Temporary relief during and immediately after sessions. Symptoms may return between visits (this is normal). Minor soreness may occur.</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-sage w-5 h-5 shrink-0 mt-0.5"></i> <strong>Sessions 5-8:</strong> Relief begins lasting longer between sessions. Many patients report reduced radiating leg or arm pain and improved mobility.</li>
+                    </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-soft reveal-up" style="transition-delay: 100ms;">
+                    <h3 class="text-2xl mb-6 flex items-center gap-3">
+                        <span class="bg-sage text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span> 
+                        Sustained Improvement <span class="text-body text-base font-normal">(Sessions 9-24)</span>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-sage w-5 h-5 shrink-0 mt-0.5"></i> <strong>Sessions 9-12:</strong> Significant symptom improvement. Functional activities that were previously painful become manageable. Reassessment occurs here.</li>
+                        <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="text-sage w-5 h-5 shrink-0 mt-0.5"></i> <strong>Sessions 13-24:</strong> Progressive structural improvement for more severe cases. Disc hydration and healing continue, symptoms stabilize.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-full h-[400px] rounded-3xl overflow-hidden clip-reveal shadow-xl reveal-up">
+                <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/686eae0f8a1e571117e2aaca_Disc%20Herniations%20%26%20Bulges%202-p-800.avif" alt="Decompression Therapy Sessions" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contraindications / Pre-FAQ Section -->
+    <section class="bg-white py-24 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center reveal-up">
+            <span class="text-tag tracking-wider uppercase">Clinical Honesty</span>
+            <h2 class="mt-4 mb-8">When Decompression May Not Be the Right Fit</h2>
+            <p class="text-body text-lg mb-8">While decompression demonstrates strong clinical evidence, it is not appropriate for every patient. If you have spinal fusion hardware (rods, screws, cages), are pregnant, have severe osteoporosis, or have unstable spinal fractures, decompression therapy is contraindicated. We evaluate surgical history (like simple discectomies) on a case-by-case basis.</p>
+            <p class="text-body text-lg">If your pain is primarily from facet joints rather than disc pathology, standard chiropractic adjustments may be more appropriate and cost-effective. We maintain referral relationships with orthopedic spine surgeons and pain management physicians to ensure coordinated care if you have progressive neurological deficits or require combined approaches like epidural injections.</p>
+        </div>
+    </section>
+
+    <!-- 10. FAQ SECTION -->
+    <section class="bg-white py-24 lg:py-32">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-center mb-16 reveal-up">Common Questions About Spinal Decompression</h2>
+            
+            <div class="space-y-4 reveal-up">
+                <!-- FAQ Item 1 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none bg-transparent">
+                        <h3 class="text-lg m-0 font-semibold text-dark">How is spinal decompression different from traction?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        Standard mechanical traction applies a constant pulling force, which triggers the body's protective muscle guarding reflex—your muscles tighten to resist the pull. True spinal decompression uses computerized variable force curves that gradually cycle between pulling and releasing in patterns the body cannot anticipate. This achieves genuine negative intradiscal pressure that traction simply cannot replicate.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">How many decompression sessions will I need?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        The number of sessions is determined by your examination findings—it's not a one-size-fits-all protocol. Dr. Mikala Booher typically recommends either 12 or 24 sessions based on condition severity. Research shows most patients experience meaningful improvement within the first 4–6 sessions, with optimal outcomes achieved through completion of the full protocol.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">Do I need an MRI before starting decompression therapy?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        An MRI is helpful but not required to begin. Dr. Booher takes full-spine digital X-rays during your initial visit, which reveal disc height loss and structural changes. If you have existing MRI results, bring them to help refine your protocol. In some cases, we may recommend obtaining an MRI if findings suggest it would meaningfully change the treatment approach.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">Is spinal decompression painful?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        Most patients find decompression therapy comfortable—many actually fall asleep during sessions. You'll feel a gentle, cyclic stretching sensation. There should be no sharp or shooting pain. Some patients experience mild soreness for 24–48 hours after the first few sessions as tissues adapt. If you experience discomfort, parameters are adjusted immediately.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">Does insurance cover spinal decompression therapy?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        Elite Wellness Chiropractic is a cash-pay practice. Most insurance plans do not cover spinal decompression therapy, classifying it as investigational despite growing evidence. We do accept HSA and FSA payments. Your $60 New Patient Experience covers the comprehensive exam and X-rays, and Dr. Booher presents full treatment costs upfront.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">Can I receive decompression if I've had back surgery?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        It depends. If your surgery involved hardware placement (spinal fusion with rods, screws, or cages), decompression is contraindicated in that area to protect the implant. However, if you had a simple discectomy or laminectomy without hardware, decompression may still be appropriate. We evaluate surgical history on a case-by-case basis.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="accordion-item border border-gray-200 rounded-2xl overflow-hidden hover:bg-sageLight/30 transition-colors">
+                    <button class="w-full text-left p-6 flex justify-between items-center gap-4 focus:outline-none">
+                        <h3 class="text-lg m-0 font-semibold text-dark">How does decompression fit with chiropractic adjustment?</h3>
+                        <i data-lucide="plus" class="w-5 h-5 text-sage shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                    </button>
+                    <div class="accordion-content px-6 text-body">
+                        Decompression directly creates negative pressure to retract herniated material and promote healing. Chiropractic adjustments restore proper vertebral alignment, reducing the mechanical stresses that contributed to the disc damage initially. This integrated approach addresses the full biomechanical picture rather than treating a single component in isolation.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center reveal-up">
+                <p class="text-lg text-dark font-medium">Still have questions? Call us at <a href="tel:512-328-3800" class="text-sage hover:underline">(512) 328-3800</a> or book your visit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. TESTIMONIALS SECTION -->
+    <section class="bg-sage py-24 lg:py-32 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-white mb-16 reveal-up">What Our Patients Say About Disc Pain Relief</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm reveal-up">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold text-xl">C</div>
+                        <div>
+                            <div class="font-bold">Celia Leung</div>
+                            <div class="text-white/70 text-sm">Bee Cave, TX</div>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-300 mb-4 test-stars">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-[rgba(255,255,255,0.75)] italic leading-relaxed">"For the last three weeks I've visited Dr. Mikala... I thoroughly enjoy their unique approach to treating the whole body. I work in the dental field, yrs of leaning awkwardly have reeked havoc. With Dr. Mikala's help the discomfort my sciatic nerve produced is almost nonexistent. The office staff is so welcoming!"</p>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm reveal-up" style="transition-delay: 100ms;">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold text-xl">R</div>
+                        <div>
+                            <div class="font-bold">Robert T.</div>
+                            <div class="text-white/70 text-sm">Lakeway, TX</div>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-300 mb-4 test-stars">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-[rgba(255,255,255,0.75)] italic leading-relaxed">"I was told surgery was my only option for my L4-L5 herniation. I could barely walk to my mailbox. Dr. Booher put me on a decompression and adjustment protocol. Three months later, I am fully avoiding the operating room and playing golf again."</p>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-sm reveal-up" style="transition-delay: 200ms;">
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center font-bold text-xl">A</div>
+                        <div>
+                            <div class="font-bold">Amanda W.</div>
+                            <div class="text-white/70 text-sm">Westlake, TX</div>
+                        </div>
+                    </div>
+                    <div class="flex text-amber-300 mb-4 test-stars">
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                    </div>
+                    <p class="text-[rgba(255,255,255,0.75)] italic leading-relaxed">"The shooting pain down my leg was unbearable. The Elite Wellness team didn't just 'crack my back'—they mapped exactly which nerve was compressed and systematically took the pressure off. Truly life-changing non-surgical care."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. RELATED CONDITIONS -->
+    <section class="bg-white py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="mb-16 reveal-up">Related Conditions We Also Treat</h2>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="grid sm:grid-cols-2 gap-6 order-2 lg:order-1">
+                    <!-- Condition Card -->
+                    <a href="#" class="bg-card p-8 rounded-xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-1 block group reveal-up">
+                        <i data-lucide="activity" class="w-8 h-8 text-sage mb-4"></i>
+                        <h3 class="text-lg mb-2 group-hover:text-sage transition-colors">Back Pain</h3>
+                        <p class="text-sm text-body mb-4">Evidence-based corrective care for lasting lower back pain relief.</p>
+                        <span class="text-sage text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    <!-- Condition Card -->
+                    <a href="#" class="bg-card p-8 rounded-xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-1 block group reveal-up" style="transition-delay: 100ms;">
+                        <i data-lucide="zap" class="w-8 h-8 text-sage mb-4"></i>
+                        <h3 class="text-lg mb-2 group-hover:text-sage transition-colors">Sciatica</h3>
+                        <p class="text-sm text-body mb-4">Relief for shooting nerve pain radiating down your leg.</p>
+                        <span class="text-sage text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    <!-- Condition Card -->
+                    <a href="#" class="bg-card p-8 rounded-xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-1 block group reveal-up">
+                        <i data-lucide="car" class="w-8 h-8 text-sage mb-4"></i>
+                        <h3 class="text-lg mb-2 group-hover:text-sage transition-colors">Auto Injuries</h3>
+                        <p class="text-sm text-body mb-4">Specialized whiplash treatment and comprehensive recovery protocols.</p>
+                        <span class="text-sage text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                    <!-- Condition Card -->
+                    <a href="#" class="bg-card p-8 rounded-xl shadow-soft hover:shadow-hover transition-all hover:-translate-y-1 block group reveal-up" style="transition-delay: 100ms;">
+                        <i data-lucide="activity-square" class="w-8 h-8 text-sage mb-4"></i>
+                        <h3 class="text-lg mb-2 group-hover:text-sage transition-colors">Neck Pain</h3>
+                        <p class="text-sm text-body mb-4">Corrective care for tech neck, whiplash, and cervical disc issues.</p>
+                        <span class="text-sage text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+                    </a>
+                </div>
+
+                <div class="order-1 lg:order-2 clip-reveal rounded-3xl overflow-hidden shadow-xl aspect-square lg:aspect-auto h-[500px]">
+                    <img src="https://cdn.prod.website-files.com/6851afb2267e454b21282066/686eae0f76b45b709bba0efd_Disc%20Herniations%20%26%20Bulges%201-p-800.avif" alt="Chiropractic Care" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FINAL CTA SECTION -->
+    <section class="bg-sage py-32 relative overflow-hidden text-center">
+        <!-- Floating Elements -->
+        <svg class="absolute top-10 left-10 text-white/5 w-64 h-64 animate-floating pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+        <svg class="absolute bottom-10 right-10 text-white/5 w-96 h-96 animate-floating-delayed pointer-events-none" fill="currentColor" viewBox="0 0 24 24"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+
+        <div class="max-w-4xl mx-auto px-6 relative z-10 text-white reveal-up">
+            <h2 class="text-white mb-6 leading-tight">Bee Cave's Only DOC Decompression Table — Start Your Recovery Today</h2>
+            <p class="text-[rgba(255,255,255,0.85)] text-lg mb-12 max-w-2xl mx-auto">If you haven't found lasting relief from medication, injections, or physical therapy alone, spinal decompression therapy may be the missing piece. We combine true spinal decompression with structural corrective care to address the root cause of your disc-related pain.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                <a href="#" class="bg-white text-sage px-8 py-4 rounded-full font-semibold btn-premium shadow-xl">Schedule Your $60 Experience</a>
+                <a href="tel:512-297-2288" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold btn-outline hover:bg-white/10 flex items-center justify-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> Call (512) 297-2288</a>
+            </div>
+
+            <p class="text-sm text-white/60 max-w-xl mx-auto italic">
+                *Dr. Mikala Booher, DC serves Bee Cave, Lakeway, West Lake Hills, Dripping Springs, and Southwest Austin.
+            </p>
+        </div>
+    </section>
+
+    <!-- 14. CLINICAL REFERENCES -->
+    <section class="bg-linen py-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="accordion-item border border-gray-300 rounded-lg overflow-hidden reveal-up">
+                <button class="w-full text-left p-4 flex justify-between items-center gap-4 focus:outline-none bg-transparent hover:bg-black/5 transition-colors">
+                    <h3 class="uppercase tracking-wider m-0">Clinical References</h3>
+                    <i data-lucide="chevron-down" class="w-5 h-5 text-dark shrink-0 transform transition-transform duration-300 accordion-icon"></i>
+                </button>
+                <div class="accordion-content px-6 text-reference leading-relaxed">
+                    <div class="pt-6 border-t border-gray-200 space-y-3 pb-6">
+                        <p class="pl-4 -indent-4 text-reference">Adams, M. A., & Roughley, P. J. (2006). What is intervertebral disc degeneration, and what causes it? <em>Spine</em>, 31(18), 2151-2161.</p>
+                        <p class="pl-4 -indent-4 text-reference">Apfel, C. C., Cakmakkaya, O. S., Martin, W., et al. (2010). Restoration of disk height through non-surgical spinal decompression is associated with decreased discogenic low back pain: a retrospective cohort study. <em>BMC Musculoskeletal Disorders</em>, 11, 155.</p>
+                        <p class="pl-4 -indent-4 text-reference">Arun, R., Freeman, B. J., Scammell, B. E., et al. (2009). 2009 ISSLS Prize Winner: What influence does sustained mechanical load have on diffusion in and degeneration of the intervertebral disc? An in vivo study using serial postcontrast magnetic resonance imaging. <em>Spine</em>, 34(21), 2324-2337.</p>
+                        <p class="pl-4 -indent-4 text-reference">Gionis, T. A., & Groteke, E. (2003). Spinal decompression. <em>Orthopedic Technology Review</em>, 5(6), 36-39.</p>
+                        <p class="pl-4 -indent-4 text-reference">Gose, E. E., Naguszewski, W. K., & Naguszewski, R. K. (1998). Vertebral axial decompression therapy for pain associated with herniated or degenerated discs or facet syndrome: an outcome study. <em>Neurological Research</em>, 20(3), 186-190.</p>
+                        <p class="pl-4 -indent-4 text-reference">Guehring, T., Omlor, G. W., Lorenz, H., et al. (2006). Disc distraction shows evidence of regenerative potential in degenerated intervertebral discs as evaluated by protein expression, magnetic resonance imaging, and messenger ribonucleic acid expression analysis. <em>Spine</em>, 31(15), 1658-1665.</p>
+                        <p class="pl-4 -indent-4 text-reference">Macario, A., & Pergolizzi, J. V. (2006). Systematic literature review of spinal decompression via motorized traction for chronic discogenic low back pain. <em>Pain Practice</em>, 6(3), 171-178.</p>
+                        <p class="pl-4 -indent-4 text-reference">Ozturk, B., Gunduz, O. H., Ozoran, K., & Bostanoglu, S. (2006). Effect of continuous lumbar traction on the size of lumbar disc herniation. <em>Rheumatology International</em>, 26(7), 622-626.</p>
+                        <p class="pl-4 -indent-4 text-reference">Ramos, G., & Martin, W. (1994). Effects of vertebral axial decompression on intradiscal pressure. <em>Journal of Neurosurgery</em>, 81(3), 350-353.</p>
+                        <p class="pl-4 -indent-4 text-reference">Shealy, C. N., & Borgmeyer, V. (1997). Decompression, reduction, and stabilization of the lumbar spine: a cost-effective treatment for lumbosacral pain. <em>American Journal of Pain Management</em>, 7, 63-65.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 15. FOOTER -->
+    <footer class="bg-dark text-white py-16">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <div class="text-3xl font-bold text-white tracking-tight mb-4">EWC<span class="text-sage">.</span></div>
+                <p class="text-gray-400 text-sm leading-relaxed mb-6">Elite Wellness Chiropractic — Bee Cave's trusted corrective care clinic focused on addressing root causes, not just symptoms.</p>
+                <div class="flex gap-4">
+                    <a href="https://www.facebook.com/EliteWellnessChiropractic" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-sage hover:-translate-y-1 transition-all" style="color: white;"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                    <a href="https://www.instagram.com/elitewellnesschiro/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-sage hover:-translate-y-1 transition-all" style="color: white;"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+                    <a href="https://www.linkedin.com/company/elite-wellness-chiropractic/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-sage hover:-translate-y-1 transition-all" style="color: white;"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    <a href="https://www.youtube.com/@DrMikalaBooher" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-black text-white flex items-center justify-center hover:bg-sage hover:-translate-y-1 transition-all" style="color: white;"><i data-lucide="youtube" class="w-5 h-5"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-white">Conditions</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-sage transition-colors">Back Pain</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Sciatica</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Disc Herniations</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Headaches</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Whiplash</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-white">Services</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-sage transition-colors">Spinal Adjustments</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Spinal Decompression</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Corrective Programs</a></li>
+                    <li><a href="#" class="hover:text-sage transition-colors">Digital Imaging</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-lg font-bold mb-6 text-white">Contact</h4>
+                <ul class="space-y-4 text-gray-400 text-sm">
+                    <li class="flex items-start gap-3">
+                        <i data-lucide="map-pin" class="w-5 h-5 text-sage shrink-0"></i>
+                        <span>12101 Bee Cave Rd Suite 5B<br>Bee Cave, TX 78738</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <i data-lucide="phone" class="w-5 h-5 text-sage shrink-0"></i>
+                        <a href="tel:512-297-2288" class="hover:text-sage transition-colors">(512) 297-2288</a>
+                    </li>
+                    <li class="flex items-start gap-3 mt-4">
+                        <i data-lucide="clock" class="w-5 h-5 text-sage shrink-0"></i>
+                        <span>Mon-Thu: 8am - 6pm<br>Fri: 8am - 1pm<br>Sat-Sun: Closed</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Elite Wellness Chiropractic. All rights reserved.</p>
+            <div class="space-x-4">
+                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Stop background scrolling
+            setTimeout(() => {
+                mobileMenu.classList.remove('translate-x-full');
+            }, 10);
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = ''; // Restore background scrolling
+            setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+            }, 300);
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-white', 'shadow-md');
+                navbar.classList.remove('py-4', 'border-transparent');
+                navbar.classList.add('py-2');
+            } else {
+                navbar.classList.remove('bg-white', 'shadow-md');
+                navbar.classList.add('py-4', 'border-transparent');
+                navbar.classList.remove('py-2');
+            }
+        });
+
+        // Accordion Logic
+        document.querySelectorAll('.accordion-item button').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.parentElement;
+                const content = item.querySelector('.accordion-content');
+                const icon = item.querySelector('.accordion-icon');
+                
+                // Toggle active class
+                const isActive = item.classList.contains('active');
+
+                if (!isActive) {
+                    item.classList.add('active');
+                    content.style.maxHeight = content.scrollHeight + "px";
+                    
+                    // Rotate icon based on type
+                    if(icon.getAttribute('data-lucide') === 'plus') {
+                        icon.style.transform = 'rotate(45deg)'; 
+                    } else if (icon.getAttribute('data-lucide') === 'chevron-down') {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                } else {
+                    item.classList.remove('active');
+                    content.style.maxHeight = null;
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // --- GSAP ANIMATIONS ---
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Hero Setup & Timeline
+            const tlHero = gsap.timeline({ defaults: { ease: "power3.out" } });
+            
+            // Word mask stagger animation
+            tlHero.to('#hero-title .word-mask span', {
+                y: "0%",
+                opacity: 1,
+                duration: 0.8,
+                stagger: 0.08,
+                delay: 0.2
+            })
+            .to('#hero-trust', { opacity: 1, y: 0, duration: 0.6 }, "-=0.4")
+            .to('#hero-body', { opacity: 1, y: 0, duration: 0.6 }, "-=0.4")
+            .to('#hero-ctas', { opacity: 1, y: 0, duration: 0.6 }, "-=0.3")
+            .to('#hero-image-container', { opacity: 1, x: 0, duration: 1 }, "-=0.8");
+
+            // Global Scroll Reveals (Elements with .reveal-up)
+            gsap.utils.toArray('.reveal-up').forEach(elem => {
+                gsap.to(elem, {
+                    scrollTrigger: {
+                        trigger: elem,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    opacity: 1,
+                    y: 0,
+                    duration: 0.8,
+                    ease: "power2.out"
+                });
+            });
+
+            // Clip Reveal Animations for Images
+            gsap.utils.toArray('.clip-reveal').forEach(elem => {
+                gsap.to(elem, {
+                    scrollTrigger: {
+                        trigger: elem,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    clipPath: "inset(0% 0% 0% 0%)",
+                    duration: 1.2,
+                    ease: "power3.out"
+                });
+            });
+
+            // Key Takeaways Stagger reveal
+            gsap.to('.takeaway-item', {
+                scrollTrigger: {
+                    trigger: '#takeaways',
+                    start: "top 70%",
+                },
+                opacity: 1,
+                y: 0,
+                duration: 0.6,
+                stagger: 0.1,
+                ease: "power2.out"
+            });
+
+            // Image Parallax
+            gsap.utils.toArray('.parallax-img').forEach(img => {
+                gsap.to(img, {
+                    scrollTrigger: {
+                        trigger: img.parentElement,
+                        start: "top bottom",
+                        end: "bottom top",
+                        scrub: 1
+                    },
+                    y: "15%", 
+                    ease: "none"
+                });
+            });
+
+            // Stat Counters
+            const counters = document.querySelectorAll('.stat-counter');
+            counters.forEach(counter => {
+                let target = parseFloat(counter.getAttribute('data-target'));
+                let prefix = counter.getAttribute('data-prefix') || '';
+                let suffix = counter.getAttribute('data-suffix') || '';
+                let decimals = parseInt(counter.getAttribute('data-decimals') || 0);
+                
+                let obj = { val: 0 };
+                
+                gsap.to(obj, {
+                    scrollTrigger: {
+                        trigger: counter,
+                        start: "top 85%",
+                        toggleActions: "play none none none"
+                    },
+                    val: target,
+                    duration: 2.5,
+                    ease: "power3.out",
+                    onUpdate: () => {
+                        let formattedVal = obj.val.toFixed(decimals);
+                        // Explicitly formatting without the minus if it hits exactly 0
+                        if (prefix === "-" && obj.val === 0) prefix = "";
+                        counter.innerHTML = prefix + formattedVal + suffix;
+                    }
+                });
+            });
+
+            // Process Line Drawing Animation
+            gsap.to('#process-path', {
+                scrollTrigger: {
+                    trigger: '#process-path',
+                    start: "top 80%",
+                    end: "top 40%",
+                    scrub: 1
+                },
+                strokeDashoffset: 0,
+                ease: "none"
+            });
+            
+            // Star rating stagger (Testimonials)
+            gsap.utils.toArray('.test-stars').forEach(starContainer => {
+                gsap.from(starContainer.children, {
+                    scrollTrigger: {
+                        trigger: starContainer,
+                        start: "top 90%"
+                    },
+                    opacity: 0,
+                    scale: 0.5,
+                    duration: 0.4,
+                    stagger: 0.1,
+                    ease: "back.out(1.7)"
+                });
+            });
+
+        });
+    </script>
+</body>
+</html>
